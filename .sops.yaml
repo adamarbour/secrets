@@ -1,9 +1,11 @@
 keys:
   - &user_aarbour age1jtfn6xtwzg2n6jdjf3pkhzsw6ns5fqfexgyxk4k5cpxs79v3rv7qfhk05e
+  - &host_sidra age1sgvfec08pw9unyhf0q6mcm4p8t9qnq47mkx8q76ptf0y4v2lncnqwhlwcm
   - &host_cassian age1lt0k6wfwl4drhg2wpkw4sazg5peymj5nrgn43mvsvkj0ua5ef4asdg2264
 creation_rules:
   - path_regex: trove/.*\.(key|yaml)$
     key_groups:
       - age:
         - *user_aarbour
+        - *host_sidra
         - *host_cassian
