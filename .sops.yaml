@@ -1,23 +1,16 @@
 keys:
-  users:
-    - &user_aarbour age1jtfn6xtwzg2n6jdjf3pkhzsw6ns5fqfexgyxk4k5cpxs79v3rv7qfhk05e
-  hosts:
-    - &host_morrigan age1vqxhpv6pk5t0wxw2xxcgqm33dkutnmn93dmysp3p73dtdzhveqwqnrhxce
-    - &host_sidra age1sgvfec08pw9unyhf0q6mcm4p8t9qnq47mkx8q76ptf0y4v2lncnqwhlwcm
-    - &host_cassian age1lt0k6wfwl4drhg2wpkw4sazg5peymj5nrgn43mvsvkj0ua5ef4asdg2264
-    - &host_dlrr age1yptam40dlt97dmv6d0n9ytrwtxq9f2mqht8s7kdqjkmwax8nn4uq8hd9uh
-
-  groups:
-    hosts_all: &hosts_all
-      - *host_morrigan
-      - *host_sidra
-      - *host_cassian
-      - *host_dlrr
-  
+  - &user_aarbour age1jtfn6xtwzg2n6jdjf3pkhzsw6ns5fqfexgyxk4k5cpxs79v3rv7qfhk05e
+  - &host_morrigan age1vqxhpv6pk5t0wxw2xxcgqm33dkutnmn93dmysp3p73dtdzhveqwqnrhxce
+  - &host_sidra age1sgvfec08pw9unyhf0q6mcm4p8t9qnq47mkx8q76ptf0y4v2lncnqwhlwcm
+  - &host_cassian age1lt0k6wfwl4drhg2wpkw4sazg5peymj5nrgn43mvsvkj0ua5ef4asdg2264
+  - &host_dlrr age1yptam40dlt97dmv6d0n9ytrwtxq9f2mqht8s7kdqjkmwax8nn4uq8hd9uh
 creation_rules:
   - path_regex: trove/.*\.(key|yaml)$
+    shamir_threshold: 1
     key_groups:
-      - age: *hosts_all
       - age:
         - *user_aarbour
+        - *host_morrigan
+        - *host_sidra
         - *host_cassian
+        - *host_dlrr
