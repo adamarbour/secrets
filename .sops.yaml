@@ -6,7 +6,7 @@ keys:
   - &host_cassian age1lt0k6wfwl4drhg2wpkw4sazg5peymj5nrgn43mvsvkj0ua5ef4asdg2264
   - &host_dlrr age1s0rkwq0c75z0zlue23evq77wq0qg4lfq4cwk4myunkrsz3k8xg8s2s0ymp
 creation_rules:
-  - path_regex: trove/.*\.(key|yaml)$
+  - path_regex: '(^|.*/)trove/.+[^/]$'
     shamir_threshold: 1
     key_groups:
       - age:
