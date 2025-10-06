@@ -5,6 +5,7 @@ keys:
   - &host_sidra age1camvnsecm8hfnx66j7xg24lfgaeeamvtyr8kue0pdt5x92s5a9as9sew7r
   - &host_cassian age1lt0k6wfwl4drhg2wpkw4sazg5peymj5nrgn43mvsvkj0ua5ef4asdg2264
   - &host_dlrr age1s0rkwq0c75z0zlue23evq77wq0qg4lfq4cwk4myunkrsz3k8xg8s2s0ymp
+  - &host_night age1rzwhhytjxxtz6jkz5xgzvvhvy883n92868h7ts0pv5dedglupa8qtgp4d5
 creation_rules:
   - path_regex: '(^|.*/)trove/.+[^/]$'
     shamir_threshold: 1
@@ -16,3 +17,4 @@ creation_rules:
         - *host_sidra
         - *host_cassian
         - *host_dlrr
+        - *host_night
