@@ -10,6 +10,7 @@ keys:
   - &host_spring age1zjwq7dv4gypm94jssf2lg05652hw0g2l4lssaxnkcp09d7x24yfqsj2kfs
   - &host_summer age15pca2knfgtvh7erg7meupltmpl8hr42skwzfythd5qesdlz075msv92e6e
   - &host_winter age1pcp35euleycnthrl7dr29x0awyhklr6aaucrkehzgytrg224dvlsnlhsej
+  - &host_dawn age1fmkwgp27mw9xm7sjdpkn8wfl99xcg2xd76842a2gexxhlgqdny7qrqw5un
 creation_rules:
   - path_regex: '(^|.*/)trove/.+[^/]$'
     shamir_threshold: 1
@@ -26,3 +27,4 @@ creation_rules:
         - *host_spring
         - *host_summer
         - *host_winter
+        - *host_dawn
