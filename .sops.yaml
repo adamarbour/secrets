@@ -6,11 +6,12 @@ keys:
   - &host_sidra age1camvnsecm8hfnx66j7xg24lfgaeeamvtyr8kue0pdt5x92s5a9as9sew7r
   - &host_cassian age1lt0k6wfwl4drhg2wpkw4sazg5peymj5nrgn43mvsvkj0ua5ef4asdg2264
   - &host_dlrr age1s0rkwq0c75z0zlue23evq77wq0qg4lfq4cwk4myunkrsz3k8xg8s2s0ymp
-  - &host_night age1rzwhhytjxxtz6jkz5xgzvvhvy883n92868h7ts0pv5dedglupa8qtgp4d5
   - &host_spring age1zjwq7dv4gypm94jssf2lg05652hw0g2l4lssaxnkcp09d7x24yfqsj2kfs
   - &host_summer age15pca2knfgtvh7erg7meupltmpl8hr42skwzfythd5qesdlz075msv92e6e
   - &host_winter age1pcp35euleycnthrl7dr29x0awyhklr6aaucrkehzgytrg224dvlsnlhsej
   - &host_dawn age1fmkwgp27mw9xm7sjdpkn8wfl99xcg2xd76842a2gexxhlgqdny7qrqw5un
+  - &host_day age10tuprldqv2qqla237dfatvql4qxkzlp3yyqqvhfrwv3rlnqfxajs0cs0kc
+  - &host_night age1rzwhhytjxxtz6jkz5xgzvvhvy883n92868h7ts0pv5dedglupa8qtgp4d5
 creation_rules:
   - path_regex: '(^|.*/)trove/.+[^/]$'
     shamir_threshold: 1
@@ -23,8 +24,9 @@ creation_rules:
         - *host_sidra
         - *host_cassian
         - *host_dlrr
-        - *host_night
         - *host_spring
         - *host_summer
         - *host_winter
         - *host_dawn
+        - *host_day
+        - *host_night
