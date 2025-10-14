@@ -8,6 +8,7 @@ keys:
   - &host_dlrr age1s0rkwq0c75z0zlue23evq77wq0qg4lfq4cwk4myunkrsz3k8xg8s2s0ymp
   - &host_spring age1zjwq7dv4gypm94jssf2lg05652hw0g2l4lssaxnkcp09d7x24yfqsj2kfs
   - &host_summer age15pca2knfgtvh7erg7meupltmpl8hr42skwzfythd5qesdlz075msv92e6e
+  - &host_autumn age1fax4rzcv58s6wfzqzwjxjz4c4f0dcwahwzj675fvmu0ken6p23qqrlat47
   - &host_winter age1pcp35euleycnthrl7dr29x0awyhklr6aaucrkehzgytrg224dvlsnlhsej
   - &host_dawn age1fmkwgp27mw9xm7sjdpkn8wfl99xcg2xd76842a2gexxhlgqdny7qrqw5un
   - &host_day age10tuprldqv2qqla237dfatvql4qxkzlp3yyqqvhfrwv3rlnqfxajs0cs0kc
@@ -26,6 +27,7 @@ creation_rules:
         - *host_dlrr
         - *host_spring
         - *host_summer
+        - *host_autumn
         - *host_winter
         - *host_dawn
         - *host_day
